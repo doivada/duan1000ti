@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 const articleCard = document.createElement("div");
                 articleCard.classList.add("article-card");
                 articleCard.innerHTML = `
-                    <img src="/assests/img/${article.image}" alt="${article.title}" style="width:100%">
+                    <img src="./assests/img/${article.image}" alt="${article.title}" style="width:100%">
                     <h3>${article.title}</h3>
                     <p>${article.description}</p>
                     <a href="article.html?id=${article.id}">Xem chi tiết</a>
