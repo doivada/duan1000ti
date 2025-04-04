@@ -3,12 +3,12 @@
         "id": 1,
         "title": "AI đang thay đổi thế giới",
         "description": "AI đang phát triển nhanh chóng, mở ra nhiều cơ hội mới.",
-        "image": "ai.jfif"
+        "image": "ai.jpg"
     },
     {
         "id": 2,
         "title": "Python: Ngôn ngữ lập trình phổ biến nhất",
         "description": "Python đang trở thành lựa chọn hàng đầu cho lập trình viên.",
-        "image": "python.jfif"
+        "image": "python.jpg"
     }
 ]

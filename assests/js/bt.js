@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch("./data.json")
         .then(response => response.json())
         .then(data => {
-            const articleList = document.getElementById("article-list");
+            const articleList = document.getElementById("article-list");      
             data.forEach(article => {
                 const articleCard = document.createElement("div");
                 articleCard.classList.add("article-card");
