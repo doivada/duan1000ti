@@ -1,44 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Duan100ti</title>
-    <link rel="stylesheet" href="./assests/css/bt.css">
+  <meta charset="UTF-8">
+  <title>Ẩm thực Lạng Sơn</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ccc;
+      margin: 0;
+    }
+    .container {
+      width: 900px;
+      margin: auto;
+      background-color: white;
+    }
+    .top-bar {
+      background-color: red;
+      padding: 10px;
+      text-align: right;
+    }
+    .top-bar input[type="text"] {
+      width: 200px;
+      padding: 5px;
+    }
+    .top-bar input[type="submit"] {
+      padding: 5px 10px;
+      background-color: black;
+      color: white;
+      border: none;
+    }
+    .main {
+      display: flex;
+    }
+    .menu {
+      width: 200px;
+      background-color: orange;
+      padding: 10px;
+    }
+    .menu a {
+      display: block;
+      padding: 8px;
+      background-color: #f90;
+      color: black;
+      text-decoration: none;
+      margin-bottom: 5px;
+    }
+    .menu select, .menu input[type="submit"] {
+      width: 100%;
+      margin-top: 10px;
+      padding: 5px;
+    }
+    .content {
+      flex: 1;
+      padding: 15px;
+    }
+    .box {
+      border: 1px solid #999;
+      margin-bottom: 15px;
+      padding: 10px;
+    }
+    .box img {
+      float: left;
+      margin-right: 10px;
+      width: 150px;
+      height: 100px;
+      object-fit: cover;
+    }
+    .box h3 {
+      margin: 0;
+      color: darkred;
+    }
+    .box:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .footer {
+      background-color: red;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-    <img src="./assests/img/ai.jfif" alt="">
-    <header>
-        <div class="logo">Tech News</div>
-        <nav>
-            <ul>
-                <li><a href="#">AI</a></li>
-                <li><a href="#">Lập trình</a></li>
-                <li><a href="#">Thiết bị</a></li>
-                <li><a href="#">Game</a></li>
-                <li><a href="#">Review</a></li>
-            </ul>
-        </nav>
-        <input type="text" id="search" placeholder="Tìm kiếm bài viết...">
-    </header>
+  <div class="container">
+    <!-- Thanh tìm kiếm -->
+    <div class="top-bar">
+      <input type="text" placeholder="Tìm kiếm...">
+      <input type="submit" value="Tìm kiếm">
+    </div>
 
-    <main>
-        <div class="banner">
-            <h2>Bài viết nổi bật</h2>
-        </div>
+    <!-- Nội dung chính -->
+    <div class="main">
+      <!-- Menu trái -->
+      <div class="menu">
+        <a href="#">Trang chủ</a>
+        <a href="#">Giới thiệu</a>
+        <a href="#">Tin tức</a>
+        <a href="#">Du lịch</a>
+        <a href="#">Ẩm thực</a>
+        <a href="#">Dịch vụ</a>
+        <a href="#">Liên hệ</a>
+        <a href="#">Thành viên</a>
+        <br>
+        <select>
+          <option>Chọn nhóm sản phẩm</option>
+          <option>Ẩm thực</option>
+          <option>Lưu niệm</option>
+        </select>
+        <select>
+          <option>Chọn sản phẩm mức giá</option>
+          <option>Thấp</option>
+          <option>Cao</option>
+        </select>
+        <input type="submit" value="Tìm kiếm">
+      </div>
 
-        <section class="articles">
-            <h2>Bài viết mới nhất</h2>
-            <div class="grid" id="article-list">
-                <!-- Danh sách bài viết sẽ được thêm bằng JavaScript -->
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Tech News. All Rights Reserved.</p>
-    </footer>
-
-    <script src="./assests/js/bt.js"></script>
-</body>
-</html>
+      <!-- Nội dung bài viết -->
+      <div class="content">
+        <div class="box">
+          <img src="nem.jpg" alt="Nem nướng Hữu Lũng">
+          <h3>Nem nướng Hữu Lũng</h3>

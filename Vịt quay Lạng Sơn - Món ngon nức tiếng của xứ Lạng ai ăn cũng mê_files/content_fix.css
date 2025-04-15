@@ -1,0 +1,17 @@
+#detail_content_ttdl table{
+  max-width: 680px;
+  margin: 16px auto;
+}
+
+#detail_content_ttdl table tbody tr td{
+  border: 1px solid #bababa;
+}
+
+#detail_content_ttdl table tbody tr td p{
+  text-align: center !important;
+}
+
+#detail_content_ttdl table tbody tr td ul,ol{
+  margin-left: 12px;
+}
+
